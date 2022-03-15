@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.GameFragment">
+
+    <ImageView
+        android:id="@+id/hCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard3"
+        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
+
+    <ImageView
+        android:id="@+id/hCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerName" />
+
+    <ImageView
+        android:id="@+id/hCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard1"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerName" />
+
+    <ImageView
+        android:id="@+id/hCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard2"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerName" />
+
+    <ImageView
+        android:id="@+id/hCard5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard4"
+        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
+
+    <ImageView
+        android:id="@+id/pCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard2"
+        app:layout_constraintTop_toBottomOf="@+id/hCard3" />
+
+    <ImageView
+        android:id="@+id/pCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hCard1" />
+
+    <ImageView
+        android:id="@+id/pCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard1"
+        app:layout_constraintTop_toBottomOf="@+id/hCard2" />
+
+    <ImageView
+        android:id="@+id/pCard5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard4"
+        app:layout_constraintTop_toBottomOf="@+id/hCard5" />
+
+    <ImageView
+        android:id="@+id/pCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_card_back"
+        app:layout_constraintStart_toEndOf="@+id/hCard3"
+        app:layout_constraintTop_toBottomOf="@+id/hCard4" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:text="Start Game"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <Button
+        android:id="@+id/buttonHit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="Hit"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <Button
+        android:id="@+id/buttonStay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:text="Stay"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:text="Score: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="Player: Guest"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Hand"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pCard3" />
+
+    <TextView
+        android:id="@+id/txtYourHandValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Hand Value: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House Hand"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hCard3" />
+
+    <TextView
+        android:id="@+id/txtHouseHandValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="House Hand Value: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
